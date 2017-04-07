@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="css/font-awesome.css.css" rel="stylesheet" type="text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Task Panel</div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email">Name:</label>
+                                    <input type="text" class="form-control" id="name">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Status:</label>
+                                    <select class="form-control" id="sel1">
+                                        <option name="true">Completed</option>
+                                        <option name="false">Incompleted</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-block">Create</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">Complete</div>
+                            <div class="panel-body">
+                            </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">Incomplete</div>
+                        <div class="panel-body">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <div id="app">
+        {{ message }}
+    </div>
+    </body>
+
+    <script src="https://unpkg.com/vue"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!'
+        }
+    })</script>
+</html>
